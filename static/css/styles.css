@@ -36,7 +36,7 @@ body {
 }
 
 
-/* Назва / логотип */
+
 
 .navbar-brand {
     color: var(--burgundy) !important;
@@ -52,7 +52,6 @@ body {
 }
 
 
-/* Посилання */
 
 .navbar .nav-link {
     position: relative;
@@ -72,7 +71,7 @@ body {
 }
 
 
-/* Рожева лінія під активним/hover пунктом */
+
 
 .navbar .nav-link::after {
     content: "";
@@ -95,7 +94,7 @@ body {
 }
 
 
-/* Кнопка меню на мобільному */
+
 
 .navbar-toggler {
     border: 1px solid var(--pink-light) !important;
@@ -126,7 +125,6 @@ body {
 }
 
 
-/* Текст hero */
 
 .row.text-center.mb-4 h1 {
     width: 55%;
@@ -142,7 +140,7 @@ body {
 }
 
 
-/* Маленький текст */
+
 
 .row.text-center.mb-4 p {
     width: 55%;
@@ -155,7 +153,7 @@ body {
 }
 
 
-/* Фото */
+
 
 .profile-img {
     position: absolute;
@@ -219,7 +217,7 @@ section::before {
 }
 
 
-/* Заголовки */
+
 
 section h2 {
     margin-bottom: 15px;
@@ -234,7 +232,7 @@ section h2 {
 }
 
 
-/* Текст */
+
 
 section p {
     color: var(--text);
