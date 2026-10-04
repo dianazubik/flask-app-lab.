@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="row text-center mb-4">
+    <div class="col-12">
+        <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Профільне фото" class="profile-img mb-3">
+        <h1 class="display-5 fw-bold">Діана Зубик</h1>
+        <p class="lead text-muted"> </p>
+    </div>
+</div>
+
+<section id="about" class="mb-4">
+    <h2 class="h4 text-danger-emphasis pb-2">Про себе</h2>
+    <p>
+        Студентка 3-го курсу спеціальності «Інженерія програмного забезпечення» Карпатського національного університету імені Василя Стефаника. 
+        Захоплююся розробкою сучасних веб-застосунків, проектуванням архітектури програмного забезпечення та роботою з базами даних. 
+    </p>
+    <p>
+        Постійно вдосконалюю свої навички і вивчаю патерни проектування . Активна, відповідальна, прагну долучитися до реальних командних проєктів для здобуття комерційного досвіду.
+    </p>
+</section>
+
+<section id="education" class="mb-4">
+    <h2 class="h4 text-danger-emphasis pb-2">Освіта</h2>
+    <p class="fw-bold mb-1">Карпатський національний університет імені Василя Стефаника</p>
+    <p class="text-muted">Спеціальність: 121 «Інженерія програмного забезпечення» (2024 - дотепер)[cite: 1]</p>
+</section>
+
+<section id="skills" class="mb-4">
+    <h2 class="h4 text-danger-emphasis pb-2">Навички та компетенції (3 курс ІПЗ)</h2>
+    <ul>
+        <li><strong>Back-end розробка та Front-end розробка:</strong>Верстка адаптивних  інтерфейсів (HTML, CSS3, ), основи інтерактивності на JavaScript</li>
+        <li><strong>Бази даних:</strong> Проектування БД (MySQL ), написання корисних  SQL-запитів .</li>
+        <li><strong>Проектування ПЗ:</strong> Знання ООП (Python, Java, C++), розуміння основних патернів проектування та архітектурних підходів[cite: 1].</li>
+        <li><strong>Інструменти розробки:</strong> Робота з системою контролю версій Git/GitHub [cite: 1].</li>
+        <li><strong>Алгоритми та веб-дизайн:</strong> Базове розуміння алгоритмів та структур даних, основи UI/UX дизайну для створення зручних користувацьких інтерфейсів[cite: 1].</li>
+        <li><strong>Апаратні основи:</strong> Розуміння базових принципів мікроконтролерів та роботи з периферією (Основи робототехніки / C++)[cite: 1].</li>
+    </ul>
+</section>
+
+<section id="technologies" class="mb-4">
+    <h2 class="h4 text-danger-emphasis pb-2">Технологічний стек</h2>
+    <div class="d-flex gap-2 flex-wrap">
+        <span class="badge bg-primary p-2">Python </span>
+        <span class="badge bg-secondary p-2">Java</span>
+        <span class="badge bg-secondary p-2">PHP</span>
+        <span class="badge bg-secondary p-2">C++</span>
+        <span class="badge bg-dark p-2">HTML / CSS / JavaScript</span>
+        <span class="badge bg-info text-dark p-2">SQL </span>
+        <span class="badge bg-secondary p-2">Git / GitHub</span>
+        <span class="badge bg-secondary p-2">Web-дизайн (Figma)</span>
+        <span class="badge bg-secondary p-2">Основи робототехніки (Arduino)</span>
+    </div>
+</section>
+
+<section id="projects" class="mb-4">
+    <h2 class="h4 text-danger-emphasis pb-2">Досвід роботи / Проєкти</h2>
+    <div class="mb-3">
+        <h5 class="fw-bold mb-1">Університетські навчальні проєкти: Розробка навчальних вебзастосунків , створення алгоритмів та проєктування баз даних у межах курсових і лабораторних робіт.</h5>
+    </div>
+</section>
+{% endblock %}

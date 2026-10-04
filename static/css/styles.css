@@ -1,0 +1,428 @@
+:root {
+    --bg: #f7f3ef;
+    --white: #fffdfb;
+
+    --pink: #63361c;
+    --pink-light: #d3cecf;
+    --pink-soft: #f8eaec;
+
+    --burgundy: #797475;
+    --text: #403b3d;
+    --muted: #81787a;
+
+    --border: #e7dfe0;
+    --dark: #41464d;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+.container {
+    max-width: 1100px;
+}
+
+.navbar {
+    background: rgba(255, 253, 251, 0.96) !important;
+
+    border-bottom: 1px solid var(--border);
+
+    box-shadow: 0 3px 12px rgba(80, 55, 60, 0.05);
+
+    padding-top: 13px !important;
+    padding-bottom: 13px !important;
+}
+
+
+/* Назва / логотип */
+
+.navbar-brand {
+    color: var(--burgundy) !important;
+
+    font-size: 23px;
+    font-weight: 700;
+
+    letter-spacing: -0.5px;
+}
+
+.navbar-brand:hover {
+    color: var(--burgundy) !important;
+}
+
+
+/* Посилання */
+
+.navbar .nav-link {
+    position: relative;
+
+    color: var(--text) !important;
+
+    font-size: 14px;
+
+    margin-left: 15px;
+    margin-right: 15px;
+
+    transition: color 0.2s ease;
+}
+
+.navbar .nav-link:hover {
+    color: var(--burgundy) !important;
+}
+
+
+/* Рожева лінія під активним/hover пунктом */
+
+.navbar .nav-link::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: 1px;
+
+    width: 0;
+    height: 2px;
+
+    background: var(--pink);
+
+    transition: width 0.2s ease;
+}
+
+.navbar .nav-link:hover::after {
+    width: 100%;
+}
+
+
+/* Кнопка меню на мобільному */
+
+.navbar-toggler {
+    border: 1px solid var(--pink-light) !important;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 2px var(--pink-soft) !important;
+}
+
+
+.row.text-center.mb-4 {
+    position: relative;
+
+    min-height: 350px;
+
+    margin: 30px auto 25px !important;
+    padding: 45px 50px;
+
+    background: var(--white);
+
+    border: 1px solid var(--border);
+    border-radius: 18px;
+
+    box-shadow: 0 10px 28px rgba(90, 60, 65, 0.07);
+
+    display: flex;
+    align-items: center;
+}
+
+
+/* Текст hero */
+
+.row.text-center.mb-4 h1 {
+    width: 55%;
+
+    margin: 10px 0;
+
+    color: var(--text);
+
+    font-size: 48px;
+    line-height: 1.1;
+
+    font-weight: 700;
+}
+
+
+/* Маленький текст */
+
+.row.text-center.mb-4 p {
+    width: 55%;
+
+    margin: 15px 0;
+
+    color: var(--muted);
+
+    font-size: 16px;
+}
+
+
+/* Фото */
+
+.profile-img {
+    position: absolute;
+
+    right: 55px;
+    top: 35px;
+
+    width: 285px;
+    height: 300px;
+
+    object-fit: cover;
+
+    padding: 6px;
+
+    background: var(--pink-light);
+
+    border: 1px solid #8c767a;
+
+    border-radius: 45% 40% 45% 40%;
+
+    box-shadow: 0 8px 20px rgba(100, 60, 70, 0.12);
+}
+
+
+section {
+    position: relative;
+
+    margin: 18px 0;
+    padding: 24px 28px;
+
+    background: var(--white);
+
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--pink);
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 12px rgba(90, 60, 65, 0.04);
+
+    transition: box-shadow 0.2s ease;
+}
+
+section:hover {
+    box-shadow: 0 7px 18px rgba(90, 60, 65, 0.07);
+}
+
+section::before {
+    content: "";
+
+    position: absolute;
+
+    top: 22px;
+    right: 22px;
+
+    width: 7px;
+    height: 7px;
+
+    background: var(--pink-light);
+
+    border-radius: 50%;
+}
+
+
+/* Заголовки */
+
+section h2 {
+    margin-bottom: 15px;
+
+    color: var(--burgundy) !important;
+
+    font-size: 24px !important;
+    font-weight: 700;
+
+    border: none !important;
+    padding: 0 !important;
+}
+
+
+/* Текст */
+
+section p {
+    color: var(--text);
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+
+#education p:first-of-type {
+    display: inline-block;
+
+    padding: 5px 14px;
+    margin-bottom: 8px;
+
+    background: var(--dark);
+
+    color: #fff !important;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+}
+
+#skills ul {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+}
+
+#skills li {
+    padding: 7px 16px;
+
+    background: #f1e8e6;
+
+    color: #62595b;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+}
+
+
+#technologies .d-flex {
+    gap: 10px !important;
+}
+
+#technologies .badge {
+    padding: 8px 17px !important;
+    background: var(--pink-soft) !important;
+
+    color: var(--burgundy) !important;
+
+    border: 1px solid #edd4d8;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+
+    font-weight: 500;
+}
+ 
+
+#projects h5 {
+    margin-top: 15px;
+
+    color: var(--burgundy);
+
+    font-size: 19px;
+}
+
+#projects p {
+    color: var(--muted);
+}
+
+
+
+footer {
+    margin-top: 35px;
+
+    padding: 25px 20px;
+
+    background: var(--white);
+
+    border-top: 1px solid var(--border);
+
+    color: var(--muted);
+
+    font-size: 13px;
+
+    text-align: center;
+}
+
+
+footer a {
+    color: var(--burgundy);
+
+    text-decoration: none;
+
+    transition: color 0.2s ease;
+}
+
+footer a:hover {
+    color: var(--pink);
+}
+
+footer i {
+    color: var(--burgundy);
+}
+
+
+
+@media (max-width: 768px) {
+
+    .navbar .nav-link {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .row.text-center.mb-4 {
+        min-height: auto;
+
+        padding: 30px 25px;
+
+        flex-direction: column;
+
+        text-align: center !important;
+    }
+
+    .row.text-center.mb-4 h1,
+    .row.text-center.mb-4 p {
+        width: 100%;
+    }
+
+    .profile-img {
+        position: static;
+
+        width: 220px;
+        height: 230px;
+
+        margin-bottom: 25px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    section h2 {
+        font-size: 21px !important;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+
+    .row.text-center.mb-4 {
+        margin-top: 15px !important;
+
+        padding: 25px 18px;
+    }
+
+    .row.text-center.mb-4 h1 {
+        font-size: 36px;
+    }
+
+    .profile-img {
+        width: 190px;
+        height: 200px;
+    }
+
+    section {
+        margin: 12px 0;
+
+        padding: 18px;
+    }
+
+    #skills li,
+    #technologies .badge {
+        font-size: 13px;
+    }
+}

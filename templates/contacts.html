@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <section>
+            <h1 class="h3 text-danger-emphasis mb-4">Зв'яжіться зі мною</h1>
+            
+            <form action="#" method="post" onsubmit="event.preventDefault(); alert('Повідомлення (заглушка) відправлено!');">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Ваше ім'я</label>
+                    <input type="text" class="form-control" id="name" placeholder="Введіть ім'я" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email адреса</label>
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Повідомлення</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Напишіть ваше повідомлення..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary ">Надіслати</button>
+            </form>
+        </section>
+    </div>
+</div>
+{% endblock %}
