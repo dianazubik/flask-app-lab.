@@ -1,6 +1,7 @@
-﻿from flask import Flask, render_template
+from flask import render_template, request
+from . import app
 
-app = Flask(__name__)
+
 
 
 @app.route('/')
@@ -78,6 +79,8 @@ def resume():
 def contacts():
     return render_template('contacts.html', title="Контакти")
 
-
-if __name__ == '__main__':
-    app.run(debug=True)
+@app.route('/homepage')
+def home():
+    """View for the Home page of your website."""
+    agent = request.user_agent
+    return render_template("homepage.html", title="Головна", agent=agent)
