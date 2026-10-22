@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Профіль{% endblock %}
+
+{% block content %}
+<div class="bg-primary text-white p-3 mb-3">
+    <h1 class="fw-light mb-0">Ласкаво просимо до сторінки 👥 {{ username }}!</h1>
+</div>
+
+<p class="text-muted small">Тут ви можете отримати інформацію та вийти з системи.</p>
+<a href="{{ url_for('users.logout') }}" class="btn btn-danger btn-sm">Вийти</a>
+{% endblock %}
