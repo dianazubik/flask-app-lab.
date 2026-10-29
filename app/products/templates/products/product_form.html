@@ -1,0 +1,65 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <h1 class="h3 mb-4">{{ title }}</h1>
+
+        <form method="POST" enctype="multipart/form-data">
+            {{ form.hidden_tag() }}
+
+            {% for field in [
+                form.name,
+                form.content,
+                form.price,
+                form.category,
+                form.quantity,
+                form.image
+            ] %}
+                <div class="mb-3">
+                    {{ field.label(class="form-label") }}
+
+                    {% if field.name == "content" %}
+                        {{ field(
+                            class="form-control",
+                            rows=5,
+                            cols=40
+                        ) }}
+                    {% else %}
+                        {{ field(class="form-control") }}
+                    {% endif %}
+
+                    {% for error in field.errors %}
+                        <div class="text-danger small">
+                            {{ error }}
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endfor %}
+
+            {% if product and product.image %}
+                <p>Поточне зображення:</p>
+                <img
+                    src="{{ url_for(
+                        'products.static',
+                        filename=product.image
+                    ) }}"
+                    alt="{{ product.name }}"
+                    style="max-width: 200px;"
+                    class="mb-3"
+                >
+            {% endif %}
+
+            {{ form.submit(class="btn btn-primary") }}
+
+            <a
+                href="{{ url_for('products.product_list') }}"
+                class="btn btn-secondary"
+            >
+                Скасувати
+            </a>
+        </form>
+    </div>
+</div>
+{% endblock %}

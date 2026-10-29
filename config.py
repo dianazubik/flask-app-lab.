@@ -1,2 +1,3 @@
 DEBUG = True
 SECRET_KEY = "dev-secret-key"
+MAX_CONTENT_LENGTH = 2 * 1024 * 1024
