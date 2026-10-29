@@ -1,8 +1,15 @@
-from flask import render_template, request
+import logging
+
+from flask import render_template, request, redirect, url_for, flash
 from . import app
+from .forms import ContactForm
 
-
-
+logging.basicConfig(
+    filename="contact.log",
+    level=logging.INFO,
+    format="%(asctime)s - %(levelname)s - %(message)s",
+    encoding="utf-8"
+)
 
 @app.route('/')
 @app.route('/resume')
@@ -75,9 +82,38 @@ def resume():
     )
 
 
-@app.route('/contacts')
+
+@app.route('/contact', methods=['GET', 'POST'])
+@app.route('/contacts', methods=['GET', 'POST'])
 def contacts():
-    return render_template('contacts.html', title="Контакти")
+    form = ContactForm()
+
+    if form.validate_on_submit():
+        try:
+            logging.info(
+                "Contact form submitted: name=%s, email=%s, "
+                "phone=%s, subject=%s, message=%s",
+                form.name.data,
+                form.email.data,
+                form.phone.data,
+                form.subject.data,
+                form.message.data
+            )
+
+            flash("Повідомлення успішно відправлено!", "success")
+            return redirect(url_for("contacts"))
+
+        except Exception:
+            logging.exception("Error while processing contact form")
+            flash("Не вдалося обробити повідомлення.", "danger")
+            return redirect(url_for("contacts"))
+
+    return render_template(
+        "contacts.html",
+        title="Контакти",
+        form=form
+    )
+
 
 @app.route('/homepage')
 def home():
