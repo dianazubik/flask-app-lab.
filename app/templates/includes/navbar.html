@@ -1,34 +1,46 @@
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container">
-        <a class="navbar-brand fw-bold" href="{{ url_for('resume') }}">Портфоліо</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <a class="navbar-brand fw-bold" href="{{ url_for('main.resume') }}">Портфоліо</a>
+
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
+
                 <li class="nav-item">
-                    <a class="nav-link {% if request.endpoint == 'home' %}active{% endif %}"
-                       href="{{ url_for('home') }}">Головна</a>
+                    <a class="nav-link {% if request.endpoint == 'main.home' %}active{% endif %}"
+                       href="{{ url_for('main.home') }}">Головна</a>
                 </li>
+
                 <li class="nav-item">
-                    <a class="nav-link {% if request.endpoint == 'resume' %}active{% endif %}"
-                       href="{{ url_for('resume') }}">Резюме</a>
+                    <a class="nav-link {% if request.endpoint == 'main.resume' %}active{% endif %}"
+                       href="{{ url_for('main.resume') }}">Резюме</a>
                 </li>
+
                 <li class="nav-item">
-                    <a class="nav-link {% if request.endpoint == 'contacts' %}active{% endif %}"
-                       href="{{ url_for('contacts') }}">Контакти</a>
+                    <a class="nav-link {% if request.endpoint == 'main.contacts' %}active{% endif %}"
+                       href="{{ url_for('main.contacts') }}">Контакти</a>
                 </li>
+
                 <li class="nav-item">
                     <a class="nav-link {% if request.blueprint == 'products' %}active{% endif %}"
                        href="{{ url_for('products.product_list') }}">Товари</a>
                 </li>
+
                 <li class="nav-item">
                     <a class="nav-link {% if request.endpoint == 'users.profile' %}active{% endif %}"
                        href="{{ url_for('users.profile') }}">Профіль</a>
                 </li>
+
                 {% if session.get('username') %}
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ url_for('users.logout') }}">Вийти ({{ session['username'] }})</a>
+                    <a class="nav-link" href="{{ url_for('users.logout') }}">
+                        Вийти ({{ session['username'] }})
+                    </a>
                 </li>
                 {% else %}
                 <li class="nav-item">
@@ -36,7 +48,9 @@
                        href="{{ url_for('users.login') }}">Вхід</a>
                 </li>
                 {% endif %}
+
             </ul>
         </div>
     </div>
 </nav>
+ 

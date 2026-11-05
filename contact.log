@@ -168,3 +168,101 @@
 2026-10-29 12:33:07,248 - INFO -  * Restarting with stat
 2026-10-29 12:33:07,561 - WARNING -  * Debugger is active!
 2026-10-29 12:33:07,566 - INFO -  * Debugger PIN: 138-278-880
+2026-11-05 16:20:18,781 - INFO - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+2026-11-05 16:20:18,782 - INFO - Press CTRL+C to quit
+2026-11-05 16:20:18,785 - INFO -  * Restarting with stat
+2026-11-05 16:20:20,547 - WARNING -  * Debugger is active!
+2026-11-05 16:20:20,565 - INFO -  * Debugger PIN: 849-307-276
+2026-11-05 16:21:18,414 - INFO - 127.0.0.1 - - [05/Nov/2026 16:21:18] "GET /?utm_source=chatgpt.com HTTP/1.1" 500 -
+2026-11-05 16:21:18,690 - INFO - 127.0.0.1 - - [05/Nov/2026 16:21:18] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2026-11-05 16:21:18,691 - INFO - 127.0.0.1 - - [05/Nov/2026 16:21:18] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2026-11-05 16:21:18,784 - INFO - 127.0.0.1 - - [05/Nov/2026 16:21:18] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=HZF385GjjYH1OT4YajDK HTTP/1.1" 200 -
+2026-11-05 16:21:18,844 - INFO - 127.0.0.1 - - [05/Nov/2026 16:21:18] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2026-11-05 16:21:27,988 - INFO - 127.0.0.1 - - [05/Nov/2026 16:21:27] "GET /?utm_source=chatgpt.com HTTP/1.1" 500 -
+2026-11-05 16:21:28,044 - INFO - 127.0.0.1 - - [05/Nov/2026 16:21:28] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 304 -
+2026-11-05 16:21:28,049 - INFO - 127.0.0.1 - - [05/Nov/2026 16:21:28] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 304 -
+2026-11-05 16:21:28,164 - INFO - 127.0.0.1 - - [05/Nov/2026 16:21:28] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=HZF385GjjYH1OT4YajDK HTTP/1.1" 304 -
+2026-11-05 16:21:45,167 - INFO - 127.0.0.1 - - [05/Nov/2026 16:21:45] "GET /post?utm_source=chatgpt.com HTTP/1.1" 500 -
+2026-11-05 16:21:45,233 - INFO - 127.0.0.1 - - [05/Nov/2026 16:21:45] "GET /post?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2026-11-05 16:21:45,243 - INFO - 127.0.0.1 - - [05/Nov/2026 16:21:45] "GET /post?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2026-11-05 16:21:45,338 - INFO - 127.0.0.1 - - [05/Nov/2026 16:21:45] "GET /post?__debugger__=yes&cmd=resource&f=console.png&s=HZF385GjjYH1OT4YajDK HTTP/1.1" 200 -
+2026-11-05 16:21:45,450 - INFO - 127.0.0.1 - - [05/Nov/2026 16:21:45] "GET /post?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2026-11-05 16:21:58,674 - INFO - 127.0.0.1 - - [05/Nov/2026 16:21:58] "GET / HTTP/1.1" 500 -
+2026-11-05 16:21:58,769 - INFO - 127.0.0.1 - - [05/Nov/2026 16:21:58] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 304 -
+2026-11-05 16:21:58,783 - INFO - 127.0.0.1 - - [05/Nov/2026 16:21:58] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 304 -
+2026-11-05 16:21:58,911 - INFO - 127.0.0.1 - - [05/Nov/2026 16:21:58] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=HZF385GjjYH1OT4YajDK HTTP/1.1" 304 -
+2026-11-05 16:27:43,059 - INFO - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+2026-11-05 16:27:43,059 - INFO - Press CTRL+C to quit
+2026-11-05 16:27:43,063 - INFO -  * Restarting with stat
+2026-11-05 16:27:44,708 - WARNING -  * Debugger is active!
+2026-11-05 16:27:44,723 - INFO -  * Debugger PIN: 849-307-276
+2026-11-05 16:28:47,730 - INFO - 127.0.0.1 - - [05/Nov/2026 16:28:47] "GET /?utm_source=chatgpt.com HTTP/1.1" 200 -
+2026-11-05 16:28:48,018 - INFO - 127.0.0.1 - - [05/Nov/2026 16:28:48] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-11-05 16:28:48,037 - INFO - 127.0.0.1 - - [05/Nov/2026 16:28:48] "GET /static/images/profile.jpg HTTP/1.1" 200 -
+2026-11-05 16:28:48,158 - INFO - 127.0.0.1 - - [05/Nov/2026 16:28:48] "GET /favicon.ico HTTP/1.1" 404 -
+2026-11-05 16:29:00,271 - INFO - 127.0.0.1 - - [05/Nov/2026 16:29:00] "GET /resume?utm_source=chatgpt.com HTTP/1.1" 200 -
+2026-11-05 16:29:00,330 - INFO - 127.0.0.1 - - [05/Nov/2026 16:29:00] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-11-05 16:29:00,335 - INFO - 127.0.0.1 - - [05/Nov/2026 16:29:00] "GET /static/images/profile.jpg HTTP/1.1" 304 -
+2026-11-05 16:29:12,164 - INFO - 127.0.0.1 - - [05/Nov/2026 16:29:12] "GET /contacts HTTP/1.1" 200 -
+2026-11-05 16:29:12,246 - INFO - 127.0.0.1 - - [05/Nov/2026 16:29:12] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-11-05 16:29:18,130 - INFO - 127.0.0.1 - - [05/Nov/2026 16:29:18] "GET /contacts?utm_source=chatgpt.com HTTP/1.1" 200 -
+2026-11-05 16:29:18,195 - INFO - 127.0.0.1 - - [05/Nov/2026 16:29:18] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-11-05 16:29:24,786 - INFO - 127.0.0.1 - - [05/Nov/2026 16:29:24] "GET /product HTTP/1.1" 200 -
+2026-11-05 16:29:24,868 - INFO - 127.0.0.1 - - [05/Nov/2026 16:29:24] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-11-05 16:29:24,892 - INFO - 127.0.0.1 - - [05/Nov/2026 16:29:24] "GET /products/static/uploads/f97ec6625ff741d2b20d4ed4d6625887.jpeg HTTP/1.1" 200 -
+2026-11-05 16:29:28,236 - INFO - 127.0.0.1 - - [05/Nov/2026 16:29:28] "GET /users/profile HTTP/1.1" 302 -
+2026-11-05 16:29:28,275 - INFO - 127.0.0.1 - - [05/Nov/2026 16:29:28] "GET /users/login HTTP/1.1" 200 -
+2026-11-05 16:29:28,391 - INFO - 127.0.0.1 - - [05/Nov/2026 16:29:28] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-11-05 16:29:32,933 - INFO - The CSRF token is missing.
+2026-11-05 16:29:32,933 - INFO - 127.0.0.1 - - [05/Nov/2026 16:29:32] "POST /users/login HTTP/1.1" 400 -
+2026-11-05 16:29:40,359 - INFO - 127.0.0.1 - - [05/Nov/2026 16:29:40] "GET /users/login HTTP/1.1" 200 -
+2026-11-05 16:29:46,601 - INFO - 127.0.0.1 - - [05/Nov/2026 16:29:46] "GET /users/login HTTP/1.1" 200 -
+2026-11-05 16:29:46,685 - INFO - 127.0.0.1 - - [05/Nov/2026 16:29:46] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-11-05 16:29:48,044 - INFO - The CSRF token is missing.
+2026-11-05 16:29:48,046 - INFO - 127.0.0.1 - - [05/Nov/2026 16:29:48] "POST /users/login HTTP/1.1" 400 -
+2026-11-05 16:33:28,191 - INFO - The CSRF token is missing.
+2026-11-05 16:33:28,191 - INFO - 127.0.0.1 - - [05/Nov/2026 16:33:28] "POST /users/login HTTP/1.1" 400 -
+2026-11-05 16:33:31,919 - INFO - The CSRF token is missing.
+2026-11-05 16:33:31,920 - INFO - 127.0.0.1 - - [05/Nov/2026 16:33:31] "POST /users/login HTTP/1.1" 400 -
+2026-11-05 16:33:57,674 - INFO - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+2026-11-05 16:33:57,674 - INFO - Press CTRL+C to quit
+2026-11-05 16:33:57,675 - INFO -  * Restarting with stat
+2026-11-05 16:33:58,367 - WARNING -  * Debugger is active!
+2026-11-05 16:33:58,373 - INFO -  * Debugger PIN: 849-307-276
+2026-11-05 16:34:14,114 - INFO - 127.0.0.1 - - [05/Nov/2026 16:34:14] "GET /resume?utm_source=chatgpt.com HTTP/1.1" 200 -
+2026-11-05 16:34:14,263 - INFO - 127.0.0.1 - - [05/Nov/2026 16:34:14] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-11-05 16:34:14,263 - INFO - 127.0.0.1 - - [05/Nov/2026 16:34:14] "GET /static/images/profile.jpg HTTP/1.1" 304 -
+2026-11-05 16:34:16,769 - INFO - 127.0.0.1 - - [05/Nov/2026 16:34:16] "GET /users/login HTTP/1.1" 200 -
+2026-11-05 16:34:16,801 - INFO - 127.0.0.1 - - [05/Nov/2026 16:34:16] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-11-05 16:34:18,017 - INFO - 127.0.0.1 - - [05/Nov/2026 16:34:18] "POST /users/login HTTP/1.1" 302 -
+2026-11-05 16:34:18,030 - INFO - 127.0.0.1 - - [05/Nov/2026 16:34:18] "GET /users/profile HTTP/1.1" 200 -
+2026-11-05 16:34:18,092 - INFO - 127.0.0.1 - - [05/Nov/2026 16:34:18] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-11-05 16:52:07,900 - INFO - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+2026-11-05 16:52:07,900 - INFO - Press CTRL+C to quit
+2026-11-05 16:52:07,901 - INFO -  * Restarting with stat
+2026-11-05 16:52:08,759 - WARNING -  * Debugger is active!
+2026-11-05 16:52:08,765 - INFO -  * Debugger PIN: 849-307-276
+2026-11-05 16:52:12,589 - INFO - 127.0.0.1 - - [05/Nov/2026 16:52:12] "GET /users/login?utm_source=chatgpt.com HTTP/1.1" 200 -
+2026-11-05 16:52:12,700 - INFO - 127.0.0.1 - - [05/Nov/2026 16:52:12] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-11-05 16:52:16,979 - INFO - 127.0.0.1 - - [05/Nov/2026 16:52:16] "POST /users/login HTTP/1.1" 302 -
+2026-11-05 16:52:16,992 - INFO - 127.0.0.1 - - [05/Nov/2026 16:52:16] "GET /users/profile HTTP/1.1" 200 -
+2026-11-05 16:52:17,048 - INFO - 127.0.0.1 - - [05/Nov/2026 16:52:17] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-11-05 16:52:30,150 - INFO - 127.0.0.1 - - [05/Nov/2026 16:52:30] "POST /users/add_cookie HTTP/1.1" 302 -
+2026-11-05 16:52:30,158 - INFO - 127.0.0.1 - - [05/Nov/2026 16:52:30] "GET /users/profile HTTP/1.1" 200 -
+2026-11-05 16:52:30,219 - INFO - 127.0.0.1 - - [05/Nov/2026 16:52:30] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-11-05 16:52:33,464 - INFO - 127.0.0.1 - - [05/Nov/2026 16:52:33] "POST /users/delete_all_cookies HTTP/1.1" 302 -
+2026-11-05 16:52:33,471 - INFO - 127.0.0.1 - - [05/Nov/2026 16:52:33] "GET /users/profile HTTP/1.1" 200 -
+2026-11-05 16:52:33,538 - INFO - 127.0.0.1 - - [05/Nov/2026 16:52:33] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-11-05 16:52:37,612 - INFO - 127.0.0.1 - - [05/Nov/2026 16:52:37] "GET /contacts?utm_source=chatgpt.com HTTP/1.1" 200 -
+2026-11-05 16:52:37,638 - INFO - 127.0.0.1 - - [05/Nov/2026 16:52:37] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-11-05 16:52:42,179 - INFO - 127.0.0.1 - - [05/Nov/2026 16:52:42] "GET /product HTTP/1.1" 200 -
+2026-11-05 16:52:42,214 - INFO - 127.0.0.1 - - [05/Nov/2026 16:52:42] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-11-05 16:52:42,225 - INFO - 127.0.0.1 - - [05/Nov/2026 16:52:42] "GET /products/static/uploads/f97ec6625ff741d2b20d4ed4d6625887.jpeg HTTP/1.1" 304 -
+2026-11-05 16:53:50,204 - INFO - 127.0.0.1 - - [05/Nov/2026 16:53:50] "GET /users/login?utm_source=chatgpt.com HTTP/1.1" 200 -
+2026-11-05 16:53:50,243 - INFO - 127.0.0.1 - - [05/Nov/2026 16:53:50] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-11-05 16:54:08,372 - INFO - 127.0.0.1 - - [05/Nov/2026 16:54:08] "GET /users/404 HTTP/1.1" 404 -
+2026-11-05 16:54:08,415 - INFO - 127.0.0.1 - - [05/Nov/2026 16:54:08] "GET /static/css/styles.css HTTP/1.1" 304 -

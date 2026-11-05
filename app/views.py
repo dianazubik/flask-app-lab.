@@ -1,8 +1,10 @@
+
 import logging
 
-from flask import render_template, request, redirect, url_for, flash
-from . import app
+from flask import Blueprint, render_template, request, redirect, url_for, flash
 from .forms import ContactForm
+
+main_bp = Blueprint("main", __name__)
 
 logging.basicConfig(
     filename="contact.log",
@@ -11,8 +13,9 @@ logging.basicConfig(
     encoding="utf-8"
 )
 
-@app.route('/')
-@app.route('/resume')
+
+@main_bp.route('/')
+@main_bp.route('/resume')
 def resume():
     person = {
         "name": "Діана Зубик",
@@ -38,18 +41,30 @@ def resume():
     ]
 
     skills = [
-        {"title": "Back-end розробка та Front-end розробка",
-         "description": "Верстка адаптивних інтерфейсів (HTML, CSS3), основи інтерактивності на JavaScript."},
-        {"title": "Бази даних",
-         "description": "Проектування БД (MySQL), написання корисних SQL-запитів."},
-        {"title": "Проектування ПЗ",
-         "description": "Знання ООП (Python, Java, C++), розуміння основних патернів проектування та архітектурних підходів."},
-        {"title": "Інструменти розробки",
-         "description": "Робота з системою контролю версій Git/GitHub."},
-        {"title": "Алгоритми та веб-дизайн",
-         "description": "Базове розуміння алгоритмів та структур даних, основи UI/UX дизайну для створення зручних користувацьких інтерфейсів."},
-        {"title": "Апаратні основи",
-         "description": "Розуміння базових принципів мікроконтролерів та роботи з периферією (Основи робототехніки / C++)."},
+        {
+            "title": "Back-end розробка та Front-end розробка",
+            "description": "Верстка адаптивних інтерфейсів (HTML, CSS3), основи інтерактивності на JavaScript."
+        },
+        {
+            "title": "Бази даних",
+            "description": "Проектування БД (MySQL), написання корисних SQL-запитів."
+        },
+        {
+            "title": "Проектування ПЗ",
+            "description": "Знання ООП (Python, Java, C++), розуміння основних патернів проектування та архітектурних підходів."
+        },
+        {
+            "title": "Інструменти розробки",
+            "description": "Робота з системою контролю версій Git/GitHub."
+        },
+        {
+            "title": "Алгоритми та веб-дизайн",
+            "description": "Базове розуміння алгоритмів та структур даних, основи UI/UX дизайну для створення зручних користувацьких інтерфейсів."
+        },
+        {
+            "title": "Апаратні основи",
+            "description": "Розуміння базових принципів мікроконтролерів та роботи з периферією (Основи робототехніки / C++)."
+        },
     ]
 
     technologies = [
@@ -65,9 +80,11 @@ def resume():
     ]
 
     projects = [
-        {"title": "Університетські навчальні проєкти",
-         "description": "Розробка навчальних вебзастосунків, створення алгоритмів та "
-                        "проєктування баз даних у межах курсових і лабораторних робіт."},
+        {
+            "title": "Університетські навчальні проєкти",
+            "description": "Розробка навчальних вебзастосунків, створення алгоритмів та "
+                           "проєктування баз даних у межах курсових і лабораторних робіт."
+        },
     ]
 
     return render_template(
@@ -82,9 +99,8 @@ def resume():
     )
 
 
-
-@app.route('/contact', methods=['GET', 'POST'])
-@app.route('/contacts', methods=['GET', 'POST'])
+@main_bp.route('/contact', methods=['GET', 'POST'])
+@main_bp.route('/contacts', methods=['GET', 'POST'])
 def contacts():
     form = ContactForm()
 
@@ -101,12 +117,12 @@ def contacts():
             )
 
             flash("Повідомлення успішно відправлено!", "success")
-            return redirect(url_for("contacts"))
+            return redirect(url_for("main.contacts"))
 
         except Exception:
             logging.exception("Error while processing contact form")
             flash("Не вдалося обробити повідомлення.", "danger")
-            return redirect(url_for("contacts"))
+            return redirect(url_for("main.contacts"))
 
     return render_template(
         "contacts.html",
@@ -115,7 +131,7 @@ def contacts():
     )
 
 
-@app.route('/homepage')
+@main_bp.route('/homepage')
 def home():
     """View for the Home page of your website."""
     agent = request.user_agent
