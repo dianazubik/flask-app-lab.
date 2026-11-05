@@ -4,7 +4,7 @@ import unittest
 import os
 
 from tinydb import TinyDB
-from app import app
+from app import create_app
 from app.products import storage
 
 
@@ -25,9 +25,10 @@ class ProductCRUDTestCase(unittest.TestCase):
         self.original_table = storage.products_table
         storage.products_table = self.db.table("products")
 
-        app.config["TESTING"] = True
-        app.config["WTF_CSRF_ENABLED"] = False
-        self.client = app.test_client()
+        self.app = create_app("testing")
+        self.app.config["TESTING"] = True
+        self.app.config["WTF_CSRF_ENABLED"] = False
+        self.client = self.app.test_client()
 
     def tearDown(self):
         # Повертаємо справжню таблицю

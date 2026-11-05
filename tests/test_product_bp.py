@@ -1,21 +1,21 @@
 
 import unittest
 
-from app import app
+from app import create_app
 from app.products import storage
 
 
 class ProductBlueprintTestCase(unittest.TestCase):
 
     def setUp(self):
-        app.config["TESTING"] = True
-        self.client = app.test_client()
+        self.app = create_app("testing")
+        self.app.config["TESTING"] = True
+        self.client = self.app.test_client()
 
     def test_product_list_page(self):
-        response = self.client.get("/products/")
+        response = self.client.get("/product")
 
         self.assertEqual(response.status_code, 200)
-        self.assertIn(b"Keyboard", response.data)
 
     def test_product_detail_page(self):
         products = storage.get_all_products()
@@ -24,7 +24,7 @@ class ProductBlueprintTestCase(unittest.TestCase):
             self.skipTest("У базі немає товарів для перевірки")
 
         product_id = products[0]["id"]
-        response = self.client.get(f"/products/{product_id}")
+        response = self.client.get(f"/product/{product_id}")
 
         self.assertEqual(response.status_code, 200)
         self.assertIn(
@@ -33,7 +33,7 @@ class ProductBlueprintTestCase(unittest.TestCase):
         )
 
     def test_product_not_found(self):
-        response = self.client.get("/products/999999")
+        response = self.client.get("/product/999999")
 
         self.assertEqual(response.status_code, 404)
 

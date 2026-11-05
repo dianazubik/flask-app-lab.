@@ -6,4 +6,6 @@ post_bp = Blueprint(
     url_prefix="/post",
     template_folder="templates"
 )
+
 from . import models
+from . import views

@@ -1,0 +1,53 @@
+
+{% extends "base.html" %}
+
+{% block title %}{{ post.title }}{% endblock %}
+
+{% block content %}
+<div class="container posts-page">
+
+    <div class="post-details">
+
+        <h1 class="mb-3">{{ post.title }}</h1>
+
+        <div class="post-meta mb-4">
+            <span class="post-category">{{ post.category }}</span>
+            <br>
+            Автор: {{ post.author }}
+            <br>
+            Дата публікації:
+            {{ post.posted.strftime('%d.%m.%Y %H:%M') }}
+            <br>
+            Статус:
+            {% if post.is_active %}
+                <span class="text-success">Активний</span>
+            {% else %}
+                <span class="text-muted">Неактивний</span>
+            {% endif %}
+        </div>
+
+        <hr>
+
+        <div class="post-content mb-4">{{ post.content }}</div>
+
+        <div class="d-flex flex-wrap gap-2">
+            <a href="{{ url_for('posts.update_post', post_id=post.id) }}"
+               class="btn btn-primary">
+                Редагувати
+            </a>
+
+            <a href="{{ url_for('posts.delete_post', post_id=post.id) }}"
+               class="btn btn-danger">
+                Видалити
+            </a>
+
+            <a href="{{ url_for('posts.all_posts') }}"
+               class="btn btn-secondary">
+                До списку дописів
+            </a>
+        </div>
+
+    </div>
+
+</div>
+{% endblock %}

@@ -1,0 +1,75 @@
+
+{% extends "base.html" %}
+
+{% block title %}Усі дописи{% endblock %}
+
+{% block content %}
+<div class="container posts-page">
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1>Усі дописи</h1>
+
+        <a href="{{ url_for('posts.create_post') }}"
+           class="btn btn-primary">
+            + Створити допис
+        </a>
+    </div>
+
+    {% if posts %}
+        <div class="row g-4">
+            {% for post in posts %}
+                <div class="col-md-6">
+                    <div class="card post-card">
+                        <div class="card-body d-flex flex-column">
+
+                            <h5 class="card-title">
+                                {{ post.title }}
+                            </h5>
+
+                            <p class="card-text">
+                                {{ post.content[:200] }}
+                                {% if post.content|length > 200 %}...{% endif %}
+                            </p>
+
+                            <div class="post-meta mt-2 mb-3">
+                                <span class="post-category">
+                                    {{ post.category }}
+                                </span>
+                                <br>
+                                Автор: {{ post.author }}
+                                <br>
+                                Дата:
+                                {{ post.posted.strftime('%d.%m.%Y %H:%M') }}
+                            </div>
+
+                            <div class="mt-auto d-flex flex-wrap gap-2">
+                                <a href="{{ url_for('posts.detail_post', post_id=post.id) }}"
+                                   class="btn btn-outline-primary btn-sm">
+                                    Детальніше
+                                </a>
+
+                                <a href="{{ url_for('posts.update_post', post_id=post.id) }}"
+                                   class="btn btn-outline-warning btn-sm">
+                                    Редагувати
+                                </a>
+
+                                <a href="{{ url_for('posts.delete_post', post_id=post.id) }}"
+                                   class="btn btn-outline-danger btn-sm">
+                                    Видалити
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <div class="alert alert-light border">
+            Поки що дописів немає.
+            Створіть свій перший допис!
+        </div>
+    {% endif %}
+
+</div>
+{% endblock %}

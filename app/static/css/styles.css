@@ -477,3 +477,131 @@ footer i {
 .age-missing {
     color: #dc3545;
 }
+
+/* ===== Posts blueprint - Lab 6 ===== */
+
+.posts-page {
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.posts-page h1,
+.posts-page h2 {
+    color: var(--burgundy);
+    font-weight: 700;
+}
+
+.post-card {
+    height: 100%;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    box-shadow: 0 5px 16px rgba(90, 60, 65, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 9px 22px rgba(90, 60, 65, 0.10);
+}
+
+.post-card .card-title {
+    color: var(--burgundy);
+    font-weight: 700;
+}
+
+.post-card .card-text {
+    color: var(--text);
+    line-height: 1.6;
+}
+
+.post-meta {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.post-category {
+    display: inline-block;
+    padding: 6px 13px;
+    background: var(--pink-soft);
+    color: var(--burgundy);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+.post-form {
+    padding: 30px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    box-shadow: 0 5px 18px rgba(90, 60, 65, 0.06);
+}
+
+.post-form .form-label {
+    color: var(--text);
+    font-weight: 600;
+}
+
+.post-form .form-control,
+.post-form .form-select {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 12px;
+}
+
+.post-form .form-control:focus,
+.post-form .form-select:focus {
+    border-color: var(--pink);
+    box-shadow: 0 0 0 3px var(--pink-soft);
+}
+
+.post-details {
+    padding: 30px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    box-shadow: 0 5px 18px rgba(90, 60, 65, 0.06);
+}
+
+.post-details h1 {
+    color: var(--burgundy);
+}
+
+.post-content {
+    color: var(--text);
+    font-size: 16px;
+    line-height: 1.8;
+    white-space: pre-wrap;
+}
+
+.post-delete {
+    padding: 28px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    box-shadow: 0 5px 18px rgba(90, 60, 65, 0.06);
+}
+
+.posts-page .btn-primary {
+    background: var(--pink);
+    border-color: var(--pink);
+}
+
+.posts-page .btn-primary:hover {
+    background: var(--burgundy);
+    border-color: var(--burgundy);
+}
+
+@media (max-width: 576px) {
+    .post-form,
+    .post-details,
+    .post-delete {
+        padding: 20px;
+    }
+
+    .posts-page h1 {
+        font-size: 28px;
+    }
+}

@@ -30,7 +30,11 @@
                     <a class="nav-link {% if request.blueprint == 'products' %}active{% endif %}"
                        href="{{ url_for('products.product_list') }}">Товари</a>
                 </li>
-
+                 <li class="nav-item">
+                     <a class="nav-link {% if request.blueprint == 'posts' %}active{% endif %}"
+                       href="{{ url_for('posts.all_posts') }}">Дописи</a>
+                </li>
+                
                 <li class="nav-item">
                     <a class="nav-link {% if request.endpoint == 'users.profile' %}active{% endif %}"
                        href="{{ url_for('users.profile') }}">Профіль</a>
