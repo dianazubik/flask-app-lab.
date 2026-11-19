@@ -1,6 +1,13 @@
 
 from flask_wtf import FlaskForm
-from wtforms import StringField, TextAreaField, SelectField, BooleanField, SubmitField
+from wtforms import (
+    StringField,
+    TextAreaField,
+    SelectField,
+    SelectMultipleField,
+    BooleanField,
+    SubmitField
+)
 from wtforms.fields import DateTimeLocalField
 from wtforms.validators import DataRequired, Length, Optional
 
@@ -38,6 +45,18 @@ class PostForm(FlaskForm):
             ("other", "Інше")
         ],
         validators=[DataRequired()]
+    )
+
+    author_id = SelectField(
+        "Автор",
+        coerce=int,
+        validators=[DataRequired()]
+    )
+
+    # Вибір кількох тегів
+    tags = SelectMultipleField(
+        "Теги",
+        coerce=int
     )
 
     submit = SubmitField("Зберегти")

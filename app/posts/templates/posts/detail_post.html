@@ -13,11 +13,15 @@
         <div class="post-meta mb-4">
             <span class="post-category">{{ post.category }}</span>
             <br>
-            Автор: {{ post.author }}
+
+            Автор:
+            {{ post.user.username if post.user else "Не вказано" }}
             <br>
+
             Дата публікації:
             {{ post.posted.strftime('%d.%m.%Y %H:%M') }}
             <br>
+
             Статус:
             {% if post.is_active %}
                 <span class="text-success">Активний</span>
@@ -25,6 +29,20 @@
                 <span class="text-muted">Неактивний</span>
             {% endif %}
         </div>
+
+        <!-- Відображення тегів -->
+        {% if post.tags %}
+            <div class="post-tags mb-4">
+                <strong>Теги:</strong>
+                <div class="mt-2">
+                    {% for tag in post.tags %}
+                        <span class="badge rounded-pill bg-light text-dark border me-1 mb-1">
+                            {{ tag.name }}
+                        </span>
+                    {% endfor %}
+                </div>
+            </div>
+        {% endif %}
 
         <hr>
 

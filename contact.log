@@ -365,3 +365,149 @@
 2026-11-05 18:18:43,887 - INFO - 127.0.0.1 - - [05/Nov/2026 18:18:43] "POST /post/2/delete HTTP/1.1" 302 -
 2026-11-05 18:18:43,898 - INFO - 127.0.0.1 - - [05/Nov/2026 18:18:43] "GET /post/ HTTP/1.1" 200 -
 2026-11-05 18:18:44,009 - INFO - 127.0.0.1 - - [05/Nov/2026 18:18:44] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-11-19 19:39:57,266 - INFO - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+2026-11-19 19:39:57,266 - INFO - Press CTRL+C to quit
+2026-11-19 19:40:06,017 - INFO - 127.0.0.1 - - [19/Nov/2026 19:40:06] "GET /posts/create HTTP/1.1" 404 -
+2026-11-19 19:40:06,196 - INFO - 127.0.0.1 - - [19/Nov/2026 19:40:06] "GET /static/css/styles.css HTTP/1.1" 200 -
+2026-11-19 19:40:06,275 - INFO - 127.0.0.1 - - [19/Nov/2026 19:40:06] "GET /favicon.ico HTTP/1.1" 404 -
+2026-11-19 19:40:14,090 - INFO - 127.0.0.1 - - [19/Nov/2026 19:40:14] "GET / HTTP/1.1" 200 -
+2026-11-19 19:40:14,158 - INFO - 127.0.0.1 - - [19/Nov/2026 19:40:14] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-11-19 19:40:14,159 - INFO - 127.0.0.1 - - [19/Nov/2026 19:40:14] "GET /static/images/profile.jpg HTTP/1.1" 200 -
+2026-11-19 19:40:33,550 - INFO - 127.0.0.1 - - [19/Nov/2026 19:40:33] "GET /post/ HTTP/1.1" 200 -
+2026-11-19 19:40:33,601 - INFO - 127.0.0.1 - - [19/Nov/2026 19:40:33] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-11-19 19:40:35,077 - INFO - 127.0.0.1 - - [19/Nov/2026 19:40:35] "GET /post/create HTTP/1.1" 200 -
+2026-11-19 19:40:35,127 - INFO - 127.0.0.1 - - [19/Nov/2026 19:40:35] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-11-19 19:49:54,457 - INFO - 127.0.0.1 - - [19/Nov/2026 19:49:54] "GET /post/create HTTP/1.1" 200 -
+2026-11-19 19:49:54,506 - INFO - 127.0.0.1 - - [19/Nov/2026 19:49:54] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-11-19 19:50:03,708 - INFO - 127.0.0.1 - - [19/Nov/2026 19:50:03] "GET /post/create HTTP/1.1" 200 -
+2026-11-19 19:50:03,747 - INFO - 127.0.0.1 - - [19/Nov/2026 19:50:03] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-11-19 19:50:05,823 - INFO - 127.0.0.1 - - [19/Nov/2026 19:50:05] "GET /post/create HTTP/1.1" 200 -
+2026-11-19 19:50:05,878 - INFO - 127.0.0.1 - - [19/Nov/2026 19:50:05] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-11-19 19:50:59,596 - INFO - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+2026-11-19 19:50:59,596 - INFO - Press CTRL+C to quit
+2026-11-19 19:51:23,620 - INFO - 127.0.0.1 - - [19/Nov/2026 19:51:23] "GET /post/create HTTP/1.1" 200 -
+2026-11-19 19:51:23,772 - INFO - 127.0.0.1 - - [19/Nov/2026 19:51:23] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-11-19 19:52:42,078 - INFO - 127.0.0.1 - - [19/Nov/2026 19:52:42] "POST /post/create HTTP/1.1" 302 -
+2026-11-19 19:52:42,100 - INFO - 127.0.0.1 - - [19/Nov/2026 19:52:42] "GET /post/ HTTP/1.1" 200 -
+2026-11-19 19:52:42,197 - INFO - 127.0.0.1 - - [19/Nov/2026 19:52:42] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-11-19 19:52:50,850 - INFO - 127.0.0.1 - - [19/Nov/2026 19:52:50] "GET /post/5/update HTTP/1.1" 200 -
+2026-11-19 19:52:50,919 - INFO - 127.0.0.1 - - [19/Nov/2026 19:52:50] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-11-19 19:53:16,102 - INFO - 127.0.0.1 - - [19/Nov/2026 19:53:16] "GET /post/5 HTTP/1.1" 200 -
+2026-11-19 19:53:16,154 - INFO - 127.0.0.1 - - [19/Nov/2026 19:53:16] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-11-19 19:53:33,404 - INFO - 127.0.0.1 - - [19/Nov/2026 19:53:33] "GET /post/5 HTTP/1.1" 200 -
+2026-11-19 19:53:33,467 - INFO - 127.0.0.1 - - [19/Nov/2026 19:53:33] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-11-19 19:53:45,713 - INFO - 127.0.0.1 - - [19/Nov/2026 19:53:45] "GET /users/login HTTP/1.1" 200 -
+2026-11-19 19:53:45,768 - INFO - 127.0.0.1 - - [19/Nov/2026 19:53:45] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-11-19 19:53:48,530 - INFO - 127.0.0.1 - - [19/Nov/2026 19:53:48] "POST /users/login HTTP/1.1" 302 -
+2026-11-19 19:53:48,554 - INFO - 127.0.0.1 - - [19/Nov/2026 19:53:48] "GET /users/profile HTTP/1.1" 200 -
+2026-11-19 19:53:48,668 - INFO - 127.0.0.1 - - [19/Nov/2026 19:53:48] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-11-19 19:53:52,119 - INFO - 127.0.0.1 - - [19/Nov/2026 19:53:52] "GET /post/ HTTP/1.1" 200 -
+2026-11-19 19:53:52,176 - INFO - 127.0.0.1 - - [19/Nov/2026 19:53:52] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-11-19 19:53:54,892 - INFO - 127.0.0.1 - - [19/Nov/2026 19:53:54] "GET /post/5 HTTP/1.1" 200 -
+2026-11-19 19:53:54,947 - INFO - 127.0.0.1 - - [19/Nov/2026 19:53:54] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-11-19 19:55:54,885 - INFO - 127.0.0.1 - - [19/Nov/2026 19:55:54] "GET /post/ HTTP/1.1" 200 -
+2026-11-19 19:55:54,943 - INFO - 127.0.0.1 - - [19/Nov/2026 19:55:54] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-11-19 19:55:55,779 - INFO - 127.0.0.1 - - [19/Nov/2026 19:55:55] "GET /post/ HTTP/1.1" 200 -
+2026-11-19 19:55:55,817 - INFO - 127.0.0.1 - - [19/Nov/2026 19:55:55] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-11-19 19:55:56,328 - INFO - 127.0.0.1 - - [19/Nov/2026 19:55:56] "GET /post/ HTTP/1.1" 200 -
+2026-11-19 19:55:56,392 - INFO - 127.0.0.1 - - [19/Nov/2026 19:55:56] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-11-19 19:55:56,727 - INFO - 127.0.0.1 - - [19/Nov/2026 19:55:56] "GET /post/ HTTP/1.1" 200 -
+2026-11-19 19:55:56,784 - INFO - 127.0.0.1 - - [19/Nov/2026 19:55:56] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-11-19 19:56:01,667 - INFO - 127.0.0.1 - - [19/Nov/2026 19:56:01] "GET /post/ HTTP/1.1" 200 -
+2026-11-19 19:56:01,737 - INFO - 127.0.0.1 - - [19/Nov/2026 19:56:01] "GET /static/css/styles.css HTTP/1.1" 200 -
+2026-11-19 19:56:01,809 - INFO - 127.0.0.1 - - [19/Nov/2026 19:56:01] "GET /favicon.ico HTTP/1.1" 404 -
+2026-11-19 19:56:42,968 - INFO - 127.0.0.1 - - [19/Nov/2026 19:56:42] "GET / HTTP/1.1" 200 -
+2026-11-19 19:56:42,999 - INFO - 127.0.0.1 - - [19/Nov/2026 19:56:42] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-11-19 19:56:43,002 - INFO - 127.0.0.1 - - [19/Nov/2026 19:56:43] "GET /static/images/profile.jpg HTTP/1.1" 304 -
+2026-11-19 19:56:50,399 - INFO - 127.0.0.1 - - [19/Nov/2026 19:56:50] "GET /post/ HTTP/1.1" 200 -
+2026-11-19 19:56:50,465 - INFO - 127.0.0.1 - - [19/Nov/2026 19:56:50] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-11-19 19:56:53,222 - INFO - 127.0.0.1 - - [19/Nov/2026 19:56:53] "GET /users/logout HTTP/1.1" 302 -
+2026-11-19 19:56:53,231 - INFO - 127.0.0.1 - - [19/Nov/2026 19:56:53] "GET /users/login HTTP/1.1" 200 -
+2026-11-19 19:56:53,329 - INFO - 127.0.0.1 - - [19/Nov/2026 19:56:53] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-11-19 19:56:55,868 - INFO - 127.0.0.1 - - [19/Nov/2026 19:56:55] "GET /post/ HTTP/1.1" 200 -
+2026-11-19 19:56:55,923 - INFO - 127.0.0.1 - - [19/Nov/2026 19:56:55] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-11-19 19:56:58,114 - INFO - 127.0.0.1 - - [19/Nov/2026 19:56:58] "GET /post/ HTTP/1.1" 200 -
+2026-11-19 19:56:58,181 - INFO - 127.0.0.1 - - [19/Nov/2026 19:56:58] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-11-19 19:57:27,836 - INFO - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+2026-11-19 19:57:27,837 - INFO - Press CTRL+C to quit
+2026-11-19 19:57:52,554 - INFO - 127.0.0.1 - - [19/Nov/2026 19:57:52] "GET /post HTTP/1.1" 308 -
+2026-11-19 19:57:52,618 - INFO - 127.0.0.1 - - [19/Nov/2026 19:57:52] "GET /post/ HTTP/1.1" 200 -
+2026-11-19 19:57:52,805 - INFO - 127.0.0.1 - - [19/Nov/2026 19:57:52] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-11-19 19:58:43,643 - INFO - 127.0.0.1 - - [19/Nov/2026 19:58:43] "GET /post/5 HTTP/1.1" 200 -
+2026-11-19 19:58:43,696 - INFO - 127.0.0.1 - - [19/Nov/2026 19:58:43] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-11-19 20:03:33,236 - INFO - BEGIN (implicit)
+2026-11-19 20:03:33,248 - INFO - SELECT users.id, users.username, users.email, users.password 
+FROM users 
+WHERE users.id = ?
+2026-11-19 20:03:33,248 - INFO - [generated in 0.00072s] (1,)
+2026-11-19 20:03:33,253 - INFO - SELECT users.id, users.username, users.email, users.password 
+FROM users 
+WHERE users.id = ?
+2026-11-19 20:03:33,253 - INFO - [cached since 0.005692s ago] (2,)
+2026-11-19 20:03:33,257 - INFO - SELECT tags.id, tags.name 
+FROM tags 
+WHERE tags.name = ?
+2026-11-19 20:03:33,257 - INFO - [generated in 0.00034s] ('Python',)
+2026-11-19 20:03:33,259 - INFO - SELECT tags.id, tags.name 
+FROM tags 
+WHERE tags.name = ?
+2026-11-19 20:03:33,259 - INFO - [cached since 0.002341s ago] ('Навчання',)
+2026-11-19 20:03:36,842 - INFO - SELECT tags.id, tags.name 
+FROM tags 
+WHERE tags.name = ?
+2026-11-19 20:03:36,842 - INFO - [cached since 3.586s ago] ('Програмування',)
+2026-11-19 20:04:05,060 - INFO - INSERT INTO posts (title, content, posted, category, is_active, user_id) VALUES (?, ?, ?, ?, ?, ?) RETURNING id
+2026-11-19 20:04:05,060 - INFO - [generated in 0.00023s (insertmanyvalues) 1/2 (ordered; batch not supported)] ('Основи Python', 'Вивчення основ програмування мовою Python.', '2026-11-19 18:04:05.060058', 'tech', 1, 1)
+2026-11-19 20:04:05,082 - INFO - INSERT INTO posts (title, content, posted, category, is_active, user_id) VALUES (?, ?, ?, ?, ?, ?) RETURNING id
+2026-11-19 20:04:05,082 - INFO - [insertmanyvalues 2/2 (ordered; batch not supported)] ('Навчання програмуванню', 'Практичне застосування знань з програмування.', '2026-11-19 18:04:05.060063', 'publication', 1, 2)
+2026-11-19 20:04:05,084 - INFO - INSERT INTO post_tags (post_id, tag_id) VALUES (?, ?)
+2026-11-19 20:04:05,084 - INFO - [generated in 0.00032s] [(7, 2), (7, 3), (6, 1), (6, 2)]
+2026-11-19 20:04:05,085 - INFO - COMMIT
+2026-11-19 20:04:12,300 - INFO - BEGIN (implicit)
+2026-11-19 20:04:12,302 - INFO - SELECT count(*) AS count_1 
+FROM posts
+2026-11-19 20:04:12,302 - INFO - [generated in 0.00026s] ()
+2026-11-19 20:04:26,292 - INFO - SELECT posts.id, posts.title, posts.content, posts.posted, posts.category, posts.is_active, posts.user_id 
+FROM posts ORDER BY posts.id DESC
+2026-11-19 20:04:26,292 - INFO - [generated in 0.00052s] ()
+2026-11-19 20:05:51,588 - INFO - SELECT users.id, users.username, users.email, users.password 
+FROM users 
+WHERE users.id = ?
+2026-11-19 20:05:51,588 - INFO - [generated in 0.00055s] (2,)
+2026-11-19 20:05:51,591 - INFO - SELECT tags.id, tags.name 
+FROM tags, post_tags 
+WHERE ? = post_tags.post_id AND tags.id = post_tags.tag_id
+2026-11-19 20:05:51,591 - INFO - [generated in 0.00060s] (7,)
+2026-11-19 20:05:51,593 - INFO - SELECT users.id, users.username, users.email, users.password 
+FROM users 
+WHERE users.id = ?
+2026-11-19 20:05:51,593 - INFO - [cached since 0.005382s ago] (1,)
+2026-11-19 20:05:51,594 - INFO - SELECT tags.id, tags.name 
+FROM tags, post_tags 
+WHERE ? = post_tags.post_id AND tags.id = post_tags.tag_id
+2026-11-19 20:05:51,594 - INFO - [cached since 0.00335s ago] (6,)
+2026-11-19 20:05:51,595 - INFO - SELECT tags.id, tags.name 
+FROM tags, post_tags 
+WHERE ? = post_tags.post_id AND tags.id = post_tags.tag_id
+2026-11-19 20:05:51,596 - INFO - [cached since 0.004847s ago] (5,)
+2026-11-19 20:05:51,597 - INFO - SELECT tags.id, tags.name 
+FROM tags, post_tags 
+WHERE ? = post_tags.post_id AND tags.id = post_tags.tag_id
+2026-11-19 20:05:51,597 - INFO - [cached since 0.006197s ago] (4,)
+2026-11-19 20:05:51,598 - INFO - SELECT tags.id, tags.name 
+FROM tags, post_tags 
+WHERE ? = post_tags.post_id AND tags.id = post_tags.tag_id
+2026-11-19 20:05:51,598 - INFO - [cached since 0.007777s ago] (3,)
+2026-11-19 20:07:06,403 - INFO - ROLLBACK
+2026-11-19 20:07:23,755 - INFO - BEGIN (implicit)
+2026-11-19 20:07:23,760 - INFO - SELECT posts.id, posts.title, posts.content, posts.posted, posts.category, posts.is_active, posts.user_id, users_1.id AS id_1, users_1.username, users_1.email, users_1.password 
+FROM posts LEFT OUTER JOIN users AS users_1 ON users_1.id = posts.user_id ORDER BY posts.id DESC
+2026-11-19 20:07:23,761 - INFO - [generated in 0.00066s] ()
+2026-11-19 20:07:23,767 - INFO - SELECT post_tags.post_id, tags.id, tags.name 
+FROM post_tags JOIN tags ON tags.id = post_tags.tag_id 
+WHERE post_tags.post_id IN (?, ?, ?, ?, ?)
+2026-11-19 20:07:23,768 - INFO - [generated in 0.00064s] (7, 6, 5, 4, 3)
+2026-11-19 20:09:33,086 - INFO - ROLLBACK

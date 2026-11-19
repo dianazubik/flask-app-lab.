@@ -38,6 +38,24 @@
                 </div>
 
                 <div class="mb-3">
+                    {{ form.author_id.label(class="form-label") }}
+                    {{ form.author_id(class="form-select") }}
+
+                    {% for error in form.author_id.errors %}
+                        <div class="text-danger small">{{ error }}</div>
+                    {% endfor %}
+                </div>
+
+                <div class="mb-3">
+                    {{ form.tags.label(class="form-label") }}
+                    {{ form.tags(class="form-select", multiple=True, size="3") }}
+
+                    <div class="form-text">
+                        Щоб вибрати декілька тегів, утримуйте Ctrl.
+                    </div>
+                </div>
+
+                <div class="mb-3">
                     {{ form.publish_date.label(class="form-label") }}
                     {{ form.publish_date(class="form-control") }}
                 </div>

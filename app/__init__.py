@@ -11,7 +11,10 @@ def create_app(config_name="development"):
     config_class = config_by_name.get(config_name, config_by_name["development"])
     app.config.from_object(config_class)
 
-    # Ініціалізація розширень
+    # Увімкнення журналювання SQL-запитів
+    app.config["SQLALCHEMY_ECHO"] = True
+
+  # Ініціалізація розширень
     db.init_app(app)
     migrate.init_app(app, db)
 
